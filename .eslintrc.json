@@ -1,0 +1,54 @@
+//const OFF = 0;
+//const WARN = 1;
+//const ERROR = 2;
+{
+  "extends": [
+    "react-app", "prettier", "plugin:import/warnings"
+  ],
+  "plugins": [
+    "react", "react-hooks", "prettier", "eslint-plugin-import"
+  ],
+  "rules": {
+    "react/jsx-uses-react": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/prop-types": 0,
+    "import/no-default-export": 0,
+    "import/no-named-as-default": 2,
+    "no-unused-vars": 2,
+    "no-implicit-coercion": 2,
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhaustive-deps": 1,
+    "import/order": [
+      1,
+      {
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": "@arivalbank/**",
+            "group": "internal",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react", "@arivalbank/**"],
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ]
+      }
+    ]
+  }
+}
