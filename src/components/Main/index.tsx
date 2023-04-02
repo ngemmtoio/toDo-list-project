@@ -1,5 +1,6 @@
 import React from 'react';
 import NoContentSVG from '../../assets/no-content.svg';
+import { TodoItem } from '../TodoItem';
 import {
   WrapperMainContent,
   WrapperCounters,
@@ -33,6 +34,7 @@ export function MainContent() {
           itens a fazer
         </NoContentText>
       </WrapperNoContent>
+      <TodoItem text="Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer. Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer."></TodoItem>
     </WrapperMainContent>
   );
 }
