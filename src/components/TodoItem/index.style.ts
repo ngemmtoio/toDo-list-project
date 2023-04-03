@@ -1,9 +1,10 @@
 import styled from '@emotion/styled';
 
 export let ItemWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-auto-flow: column;
   align-items: center;
+  grid-column-gap: 10px;
   margin-top: 20px;
   padding: 10px 30px;
   background-color: #262626;
@@ -12,7 +13,7 @@ export let ItemWrapper = styled.div`
 `;
 
 export let ItemCheckBox = styled.div`
-  width: 50px;
+  width: 18px;
   height: 18px;
   border-radius: 50%;
   border: 1px solid #5e60ce;
@@ -22,7 +23,7 @@ export let ItemCheckBox = styled.div`
 export let CheckboxIcon = styled.img``;
 
 export let ItemText = styled.p`
-  padding: 0 50px;
+  width: 600px;
   color: #ffffff;
   font-size: 16px;
 `;
