@@ -13,10 +13,12 @@ import {
 
 interface ITodoItem {
   text: string;
+  checked: boolean;
 }
 
-export function TodoItem({ text }: ITodoItem) {
-  let [isChecked, setChecked] = useState(false);
+export function TodoItem({ text, checked }: ITodoItem) {
+  let [isChecked, setChecked] = useState(checked);
+
   return (
     <ItemWrapper>
       <ItemCheckBox onClick={() => setChecked((prevState) => !prevState)}>
